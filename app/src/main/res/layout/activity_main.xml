@@ -4,34 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView3"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="655dp"
+        android:layout_weight="0"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navi" />
+
     <FrameLayout
-        android:layout_width="308dp"
-        android:layout_height="449dp"
-        android:layout_gravity="center_vertical"
-        android:layout_margin="50dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
-        <SeekBar
-            android:id="@+id/seekBar"
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BDBDBD" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_gravity="center_vertical"
-            android:translationY="-100dp" />
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:text="|>" />
+            <FrameLayout
+                android:layout_width="133dp"
+                android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|right"
-            android:text="||" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="51dp"
+                    android:layout_height="51dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@mipmap/music_block" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal|center_vertical"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Плейлисты"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="72dp"
+                    android:layout_height="71dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/home_foreground" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Главная"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="72dp"
+                    android:layout_height="71dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/settings_foreground" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:text="Настройки"
+                    android:textSize="12sp" />
+            </FrameLayout>
+        </LinearLayout>
 
     </FrameLayout>
 </LinearLayout>
