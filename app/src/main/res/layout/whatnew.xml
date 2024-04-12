@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/helvetica_bold"
+        android:text="Обновление 0.025"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_bold"
+        android:gravity="center_horizontal"
+        android:text="Что нового:" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_regular"
+        android:gravity="center_horizontal"
+        android:text="Исправлены старые ошибки\nДобавлены новые\nПреобразовано нижнее меню\nВременное расположение нижнего меню сверху (пасхалка) \nИзменена ширина диалогового окна"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helvetica_bold"
+        android:gravity="center_horizontal"
+        android:text="Обращаем Ваше внимание, что данная версия этого приложения не является релизной. В ней, точно так же, как и в прошлой, могут встречаться пасхалки, которые могут даже выключить Вашу виртуальную машину навсегда.\nНажимая ОК, вы соглашаетесь с тем, что мы не несём ответственность за проблемы с устройством, связанные с запуском приложения."
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Я ознакомился" />
+
+</LinearLayout>
